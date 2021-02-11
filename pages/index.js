@@ -126,8 +126,8 @@ export default function Home() {
                     width={500}
                     height={375}
                     quality={100}
-                    src="/img3.jpg"
                     layout="responsive"
+                    src="/img3.jpg"
                     alt="semi"
                   />
                 </Box>
