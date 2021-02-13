@@ -11,14 +11,16 @@ const Header = () => {
         alignItems="center"
       >
         <Box ml={5}>
-          <Image src="/logo.png" w={32} />
+          <Link href="/#home">
+            <Image src="/logo.png" w={32} />
+          </Link>
         </Box>
         <Flex justifyContent="space-between" width="500px" mr={5}>
-          <Link>About</Link>
-          <Link>Business</Link>
-          <Link>Products</Link>
-          <Link>Partners</Link>
-          <Link>Contact</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/#business">Business</Link>
+          <Link href="/#products">Products</Link>
+          <Link href="/#partners">Partners</Link>
+          <Link href="/#contact">Contact</Link>
         </Flex>
       </Flex>
     </Flex>
