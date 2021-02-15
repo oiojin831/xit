@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 
 const Products = () => (
-  <Flex id="products" flexDir="column" justify="center" align="center">
+  <Flex pt="80px" id="products" flexDir="column" justify="center" align="center">
     <Box>
       <Heading>Products</Heading>
       <Center>

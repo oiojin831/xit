@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 
 const Business = () => (
-  <Flex id="business" flexDir="column" justify="center" align="center" my={20}>
+  <Flex id="business" pt="80px" minH="100vh" flexDir="column" justify="center" align="center" my={20}>
     <Box>
       <Heading>Business Area</Heading>
       <Center>

@@ -1,15 +1,15 @@
-import { Flex, Box, Link, Text, Image } from "@chakra-ui/react";
+import { Flex, Box, Link, Image } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <Flex justifyContent="center">
-      <Flex
-        position="fixed"
-        justifyContent="space-between"
-        w="1200px"
-        h="80px"
-        alignItems="center"
-      >
+    <Box
+      as="header"
+      zIndex="100"
+      position="fixed"
+      left="50%"
+      transform="translate(-50%, 0)"
+    >
+      <Flex w="1200px" h="80px" justify="space-between" align="center">
         <Box ml={5}>
           <Link href="/#home">
             <Image src="/logo.png" w={32} />
@@ -23,7 +23,7 @@ const Header = () => {
           <Link href="/#contact">Contact</Link>
         </Flex>
       </Flex>
-    </Flex>
+    </Box>
   );
 };
 
