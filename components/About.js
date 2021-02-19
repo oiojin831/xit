@@ -2,12 +2,12 @@ import { Heading, Flex, Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const About = () => (
-  <Box id="about" pt="80px" height="100vh">
-    <Flex justify="space-around" align="center" height="100vh">
+  <Box id="about" pt="80px" w="1200px">
+    <Flex justify="space-between" align="center">
       <Box h="500px" w="500px" position="relative">
         <Image
-          src="/semi.jpg"
-          alt="semi"
+          src="/about.png"
+          alt="about"
           layout="fill"
           objectFit="cover"
           quality={100}

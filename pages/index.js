@@ -1,4 +1,4 @@
-import { Flex, Box, Link, Text, Image } from "@chakra-ui/react";
+import { Flex, Box} from "@chakra-ui/react";
 
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Box as="body">
       <Header />
-      <Flex flexDir="column">
+      <Flex flexDir="column" align="center">
         <Hero />
         <About />
         <Business />
@@ -21,7 +21,7 @@ export default function Home() {
         <Partners />
         <Contact />
       </Flex>
-      <Footer />
+        <Footer />
     </Box>
   );
 }
