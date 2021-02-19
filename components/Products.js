@@ -1,66 +1,48 @@
-import {
-  Center,
-  Heading,
-  Flex,
-  Box,
-  SimpleGrid
-} from "@chakra-ui/react";
+import { Center, Heading, Flex, Text, Box, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
 
+const images = [
+  { url: "/product1.png", title: "SRC" },
+  { url: "/product2.png", title: "Alpha" },
+  { url: "/product3.png", title: "Memory" },
+];
+
 const Products = () => (
-  <Flex id="products" flexDir="column" justify="center" align="center">
+  <Flex pt="80px" id="products" flexDir="column">
     <Box>
       <Heading>Products</Heading>
+      <Text>저희가 취급하고 있는 제품들을 소개합니다.</Text>
       <Center>
         <SimpleGrid w="1200px" columns={3} spacing={24} my={6}>
-          <Box>
-            <Heading as="h2" size="md" my={6}>
-              제품개발 서포트 -{" "}
-              <Box as="span" fontWeight="normal">
-                New lopping video
+          {images.map((img) => {
+            return (
+              <Box position="relative" w="336" h="252">
+                <Image
+                  width={500}
+                  height={375}
+                  quality={100}
+                  layout="responsive"
+                  src={img.url}
+                  alt="semi"
+                  styles={{ zIndex: 5 }}
+                />
+                <Flex
+                  position="absolute"
+                  top={0}
+                  left={0}
+                  zIndex={10}
+                  w={336}
+                  h={252}
+                  justify="center"
+                  align="center"
+                >
+                  <Heading size="xl" color="white">
+                    {img.title}
+                  </Heading>
+                </Flex>
               </Box>
-            </Heading>
-            <Image
-              width={500}
-              height={375}
-              quality={100}
-              layout="responsive"
-              src="/img1.jpg"
-              alt="semi"
-            />
-          </Box>
-          <Box>
-            <Heading as="h2" size="md" my={6}>
-              부품 대치 적용 -{" "}
-              <Box as="span" fontWeight="normal">
-                Pitch deck design
-              </Box>
-            </Heading>
-            <Image
-              width={500}
-              height={375}
-              quality={100}
-              src="/img2.jpg"
-              alt="semi"
-              layout="responsive"
-            />
-          </Box>
-          <Box>
-            <Heading as="h2" size="md" my={6}>
-              해외 부품 소싱 -{" "}
-              <Box as="span" fontWeight="normal">
-                Augmented reality
-              </Box>
-            </Heading>
-            <Image
-              layout="responsive"
-              width={500}
-              height={375}
-              quality={100}
-              src="/img4.jpg"
-              alt="semi"
-            />
-          </Box>
+            );
+          })}
         </SimpleGrid>
       </Center>
     </Box>
