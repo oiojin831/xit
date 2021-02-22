@@ -19,7 +19,6 @@ const logos = [
   "/logos/hitachi.png",
   "/logos/intel.png",
   "/logos/microna.png",
-  "/logos/motorola.png",
   "/logos/nationalsemiconductor.png",
   "/logos/nec.png",
   "/logos/philips.png",

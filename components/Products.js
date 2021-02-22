@@ -2,9 +2,9 @@ import { Center, Heading, Flex, Text, Box, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
 
 const images = [
-  { url: "/product1.png", title: "SRC" },
-  { url: "/product2.png", title: "Alpha" },
-  { url: "/product3.png", title: "Memory" },
+  { url: "/product2.png", title: "SRC" },
+  { url: "/product3.png", title: "Alpha" },
+  { url: "/product1.png", title: "Memory" },
 ];
 
 const Products = () => (
