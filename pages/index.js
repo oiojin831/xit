@@ -1,6 +1,7 @@
-import { Flex, Box} from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 
 import Hero from "../components/Hero";
+import MetaHead from "../components/MetaHead";
 import About from "../components/About";
 import Business from "../components/Business";
 import Products from "../components/Products";
@@ -11,17 +12,20 @@ import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <Box as="body">
-      <Header />
-      <Flex flexDir="column" align="center">
-        <Hero />
-        <About />
-        <Business />
-        <Products />
-        <Partners />
-        <Contact />
-      </Flex>
+    <>
+      <MetaHead />
+      <Box as="body">
+        <Header />
+        <Flex flexDir="column" align="center">
+          <Hero />
+          <About />
+          <Business />
+          <Products />
+          <Partners />
+          <Contact />
+        </Flex>
         <Footer />
-    </Box>
+      </Box>
+    </>
   );
 }
